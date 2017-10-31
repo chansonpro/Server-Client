@@ -24,7 +24,6 @@ public class SelectSort {
                 array[i] = array[min];
                 array[min] = tmp;
             }
-
         }
         for (int i = 0; i <size ; i++) {
             System.out.print(array[i] +" ");
