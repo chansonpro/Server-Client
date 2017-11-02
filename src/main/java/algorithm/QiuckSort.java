@@ -60,6 +60,7 @@ public class QiuckSort {
             while (low<high) {
                 pivotKey = partition(array,low,high);// 将数组一分为二，算出pivot位置
                 qSort(array,low,pivotKey-1);// 对低子表递归排序
+                //qSort(array,pivotKey-1,high);// 对高子表递归排序
                 low = pivotKey + 1;//尾递归
             }
         }
