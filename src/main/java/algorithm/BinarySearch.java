@@ -13,7 +13,7 @@ public class BinarySearch {
         int middle;
         int index = -1;
         while (start <= end) {
-            middle = (start + end)/2;
+            middle = start + (end-start)/2;
             if(aim == array[middle]) {
                 index = middle +1;
                 break;
